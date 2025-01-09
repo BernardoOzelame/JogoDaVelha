@@ -35,7 +35,7 @@ function Game() {
 
   const handleDifficultyChange = (e) => {
     const newDifficulty = e.target.value;
-    const userConfirmed = window.confirm(`Você tem certeza de que deseja alterar a dificuldade para "${newDifficulty}"? Isso resetará o jogo e o placar. Clique em 'OK' para confirmar ou 'Cancelar' para manter a dificuldade atual.`);
+    const userConfirmed = window.confirm(`Você tem certeza de que deseja alterar a dificuldade para "${newDifficulty}"? Isso resetará seu jogo. Clique em 'OK' para confirmar ou 'Cancelar' para manter a dificuldade atual.`);
     if (userConfirmed) {
       setDifficulty(newDifficulty);
       localStorage.setItem('difficulty', newDifficulty);
